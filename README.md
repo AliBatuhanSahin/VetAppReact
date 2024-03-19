@@ -7,7 +7,7 @@ Bu proje, veterinerlerin müşteri, hayvan, randevu, aşı, doktor ve rapor gibi
 
 ## Canlı Link
 
-[Canlı Link]()
+[Canlı Link](https://vetappabs.netlify.app)
 
 ## İlişkili Projeler
 
