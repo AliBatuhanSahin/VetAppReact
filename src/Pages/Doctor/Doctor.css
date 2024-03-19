@@ -1,0 +1,74 @@
+.doctor-create, .doctor-update, .available-date-create, .available-date-update {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.doctor h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+ .doctor input[type="text"],
+ .availabledate input[type="date"],
+ .availabledate select {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 600px);
+    box-sizing: border-box;
+    margin-left: 300px;
+}
+
+.doctor button {
+  padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    width: calc(100% - 1000px);
+    box-sizing: border-box;
+    margin-left: 500px;
+}
+
+.doctor button:hover {
+  background-color: #3e8e41;
+}
+
+.doctor-list, .available-date-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.doctor-list p, .available-date-list p {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.doctor-list span, .available-date-list span {
+  cursor: pointer;
+}
+
+.doctor-list span:hover, .available-date-list span:hover {
+  text-decoration: underline;
+}
+
+.doctor-list .delete-icon,
+.doctor-list .update-icon {
+  cursor: pointer;
+  }
+  
+.doctor .delete-icon {
+  color: red;
+}
+  
+.doctor .update-icon {
+  color: blue;
+}

@@ -1,0 +1,134 @@
+.appointment-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .appointment-search {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    flex-basis: 30%;
+  }
+  
+  .appointment-search h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .appointment-search input[type="text"],
+  .appointment-search input[type="date"] {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .appointment-search button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .appointment-create,
+  .appointment-update {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    flex-basis: 30%;
+  }
+  
+  .appointment-create label,
+  .appointment-update label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .appointment-create input[type="datetime-local"],
+  .appointment-update input[type="datetime-local"] {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+   border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .appointment-create select,
+  .appointment-update select {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .appointment-create button,
+  .appointment-update button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+  
+  .appointment-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .appointment-list h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .appointment-list div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+  
+  .appointment-list p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .appointment-list .delete-icon,
+  .appointment-list .update-icon {
+    cursor: pointer;
+  }
+  
+  .appointment-list .delete-icon {
+    color: red;
+  }
+  
+  .appointment-list .update-icon {
+    color: blue;
+  }

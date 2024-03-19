@@ -1,0 +1,99 @@
+.report body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .report h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .report input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .report button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    width: calc(100% - 1000px);
+    box-sizing: border-box;
+    margin-left: 500px;
+  }
+  
+  .report button:hover {
+    background-color: #45a049;
+  }
+
+  .report-search label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .report-search input[type="text"],
+  .report-create input[type="text"],
+  .report-update input[type="text"] {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 600px);
+    box-sizing: border-box;
+    margin-left: 300px;
+  }
+
+  .report-create select,
+  .report-update select {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 600px);
+    box-sizing: border-box;
+    margin-left: 300px;
+  }
+  
+  .report-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .report-list div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+  
+  .report-list p {
+    margin: 5px 0;
+  }
+  
+  .report-list span {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .report .delete-icon {
+    color: red;
+  }
+  
+  .report .update-icon {
+    color: blue;
+  }

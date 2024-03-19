@@ -1,0 +1,96 @@
+.animal body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .animal h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .animal input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .animal button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    width: calc(100% - 1000px);
+    box-sizing: border-box;
+    margin-left: 500px;
+    margin-bottom: 10px;
+  }
+  
+  .animal button:hover {
+    background-color: #45a049;
+  }
+
+  .animal-update input[type="date"],
+  .animal-create input[type="date"],
+  .animal-search input[type="text"],
+  .animal-create input[type="text"],
+  .animal-update input[type="text"] {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 600px);
+    box-sizing: border-box;
+    margin-left: 300px;
+  }
+
+  .animal-create select,
+  .animal-update select {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 600px);
+    box-sizing: border-box;
+    margin-left: 300px;
+  }
+  
+  .animal-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .animal-list div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+  
+  .animal-list p {
+    margin: 5px 0;
+  }
+  
+  .animal-list span {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .animal .delete-icon {
+    color: red;
+  }
+  
+  .animal .update-icon {
+    color: blue;
+  }
