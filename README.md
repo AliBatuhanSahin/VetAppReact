@@ -23,7 +23,7 @@ Projenin Back-End kısmına buradan ulaşabilirsiniz.
   
 ## Ekran Görüntüleri
 
-![Resim](/VetApp/public/HomePage.png)
+![Resim](/public/HomePage.png)
 ![Resim](/VetApp/public/Doctor.png)
 ![Resim](/VetApp/public/AvailableDate.png)
 ![Resim](/VetApp/public/Animal.png)
