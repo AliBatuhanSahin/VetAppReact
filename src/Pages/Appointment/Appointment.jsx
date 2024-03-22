@@ -14,8 +14,7 @@ function Appointment() {
   const [modalMessage, setModalMessage] = useState(''); 
   const [showModal, setShowModal] = useState(false); 
 
-  const [startDate, setStartDate] = useState('');
-  const [endDate, setEndDate] = useState('');
+ 
   const [reload, setReload] = useState(true);
   const [searchName, setSearchName] = useState('');
   const [searchDate, setSearchDate] = useState('');
@@ -62,13 +61,9 @@ function Appointment() {
     });
   };
 
-  const handleUpdateAppointment = (event) => {
-    const { name, value } = event.target;
-    setUpdateAppointment((prevAppointment) => ({
-      ...prevAppointment,
-      [name]: name === 'animal' || name === 'doctor' ? { id: value } : value,
-    }));
-  };
+
+  
+
 
   const handleNewAnimal = (e) => {
     if (e.target.name === "animal") {
@@ -81,6 +76,8 @@ function Appointment() {
     }
     console.log(e.target.value, e.target.name)
   }
+
+  
 
   const handleNewDoctor = (e) => {
     if (e.target.name === "doctor") {
@@ -107,11 +104,15 @@ function Appointment() {
       setShowModal(true);
     });
     setNewAppointment({
+      id: "",
       appointmentDate: "",
-      
+      animal: "",
+      doctor: ""
     });
     
   };
+  
+
 
   // Değerlendirme Formu 16: Randevu CRUD operasyonları.
   const handleUpdate = () => {
@@ -122,21 +123,34 @@ function Appointment() {
       setShowModal(true);
     });
     setUpdateAppointment({
+      id:"",
       appointmentDate: "",
       animal: "",
       doctor: ""
     });
   };
 
+
+
   const handleUpdateBtn = (appointment) => {
+    const selectedDoctor = doctors.find((doctor) => doctor.id === appointment.doctor.id);
+    const selectedAnimal = animals.find((animal) => animal.id === appointment.animal.id);
+  
     setUpdateAppointment({
       id: appointment.id,
       appointmentDate: appointment.appointmentDate,
-      animal: appointment.animal.id,
-      doctor: appointment.doctor.id
+      doctor: selectedDoctor,
+      animal: selectedAnimal
     });
   };
 
+  const handleUpdateAppointment = (event) => {
+    const { name, value } = event.target;
+    setUpdateAppointment((prevAppointment) => ({
+      ...prevAppointment,
+      [name]: name === 'animal'  || name === 'doctor' ? { id: value } : value,
+    }));
+  };
   // Değerlendirme Formu 17: Doktor Adına göre arama.
   const handleSearch = async () => {
     const filteredAppointments = appointments.filter(appointment => appointment.doctor.name.toLowerCase().includes(searchName.toLowerCase()));
@@ -238,7 +252,7 @@ function Appointment() {
 
         <select
           name="doctor"
-          value={newAppointment.doctorId}
+          value={newAppointment.doctor?.id}
           onChange={handleNewDoctor}
         >
           <option value="">Select Doctor</option>
@@ -260,18 +274,19 @@ function Appointment() {
             onChange={handleUpdateAppointment}
           />
           <select
-            name="animalId"
-            value={updateAppointment.animalId}
+            name="animal"
+            value={updateAppointment.animal?.id}
             onChange={handleUpdateAppointment}
           >
             <option value="">Select Animal</option>
             {animals.map(animal => (
               <option key={animal.id} value={animal.id}>{animal.name}</option>
             ))}
+            
           </select>
           <select
-            name="doctorId"
-            value={updateAppointment.doctorId}
+            name="doctor"
+            value={updateAppointment.doctor?.id}
             onChange={handleUpdateAppointment}
           >
             <option value="">Select Doctor</option>

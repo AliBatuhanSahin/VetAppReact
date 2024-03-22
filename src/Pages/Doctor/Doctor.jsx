@@ -28,11 +28,12 @@ function Doctor() {
   const [availableDates, setAvailableDates] = useState([]);
   const [newAvailableDate, setNewAvailableDate] = useState({
     availableDate:"",
+    doctorId: "",
   });
   const [updateAvailableDateState, setUpdateAvailableDateState] = useState({
     id:"",
     availableDate:"",
-    
+    doctorId: "",
   });
 
   useEffect(() => {
@@ -134,7 +135,10 @@ function Doctor() {
   const handleUpdateAvailableDate = () => {
     updateAvailableDateFunc(updateAvailableDateState).then(() => {
       setReload(true);
-    })
+    }).catch(() => {
+      setModalMessage('Failed to update Doctor. Please change day and doctor same time or just change time.');
+      setShowModal(true);
+    });
     setUpdateAvailableDateState({
       id:"",
       availableDate:"",
@@ -157,6 +161,7 @@ function Doctor() {
     setUpdateAvailableDateState({
       id: date.id,
       availableDate: date.availableDate,
+      
     })
   }
 
@@ -316,7 +321,7 @@ function Doctor() {
           placeholder='Available Date'
           name="availableDate" 
           value={updateAvailableDateState.availableDate}
-          onChange={handleUpdateAvailableDate}
+          onChange={handleUpdateAvailableDateInput}
         />
         <select
             name="doctor"

@@ -118,6 +118,7 @@ function Animal() {
   
 
   const handleUpdateBtn = (animal) => {
+    
     setUpdateAnimal({
       id: animal.id,
       name: animal.name,
@@ -125,7 +126,8 @@ function Animal() {
       breed: animal.breed,
       gender: animal.gender,
       colour: animal.colour,
-      dateOfBirth: animal.dateOfBirth,    
+      dateOfBirth: animal.dateOfBirth, 
+      
     });
   };
 
