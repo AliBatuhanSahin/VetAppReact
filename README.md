@@ -7,7 +7,7 @@ Bu proje, veterinerlerin müşteri, hayvan, randevu, aşı, doktor ve rapor gibi
 
 ## Canlı Link
 
-[Canlı Link]()
+[Canlı Link](https://vetappabs.netlify.app)
 
 ## İlişkili Projeler
 
@@ -23,12 +23,12 @@ Projenin Back-End kısmına buradan ulaşabilirsiniz.
   
 ## Ekran Görüntüleri
 
-![Resim](/VetApp/public/HomePage.png)
-![Resim](/VetApp/public/Doctor.png)
-![Resim](/VetApp/public/AvailableDate.png)
-![Resim](/VetApp/public/Animal.png)
-![Resim](/VetApp/public/Vaccine.png)
-![Resim](/VetApp/public/Appointment.png)
-![Resim](/VetApp/public/Report.png)
+![Resim](/public/HomePage.png)
+![Resim](/public/Doctor.png)
+![Resim](/public/AvailableDate.png)
+![Resim](/public/Animal.png)
+![Resim](/public/Vaccine.png)
+![Resim](/public/Appointment.png)
+![Resim](/public/Report.png)
 
   
